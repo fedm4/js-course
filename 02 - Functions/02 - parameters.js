@@ -11,6 +11,8 @@
  *      // código a ejecutar
  * };
  * 
+ * myFunction("valor1", "valor2");
+ * 
  * Estos parámetros van a vivir únicamente
  * dentro de la función; es decir, si modifico
  * su valor, este no va a afectar a la variable
@@ -19,6 +21,20 @@
  * verán más adelante). Esto sucede porque los 
  * arrays y objetos son pasados por referencia.
  * 
+ * Existe la posibilidad de pasar parámetros con
+ * valores por default, en caso de que no se llamen
+ * con ese parametro.
+ * Ej:
+ * let myFunc = (param1, param2 = "mi valor") => { /* Code * / };
  * 
+ * Como se ve en el ejemplo, el segundo parámetro
+ * tiene un valor asignado, que va a ser usado en caso
+ * de llamar a la funcion sin ese parámetro.
+ * Ej:
+ * myFunction("valor1"); //param1 va a tener el valor "valor1"
+ *                       //param2 va a tener el valor "mi valor"
+ * 
+ * myFunction("valor1", "2"); //param1 va a tener el valor "valor1"
+ *                       //param2 va a tener el valor "2"
  * 
  *****************************************/

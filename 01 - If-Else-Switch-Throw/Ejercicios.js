@@ -1,9 +1,11 @@
 
 /******************************************************************************
  * 
- * 1. Pedir un mes del año por prompt en números (ej: 12)
+ * 1. Pedir un mes del año por prompt en números 
+ *    (ej: 12)
  * 2. Devolver el mes del año en texto (ej: "Diciembre")
- * 3. Hacer 2 veces, una con SWITCH Y otra con IF-ELSE IF-ELSE
+ * 3. Hacer 2 veces, una con SWITCH Y otra 
+ *    con IF-ELSE IF-ELSE
  * 
  ****************************************************************************/
 

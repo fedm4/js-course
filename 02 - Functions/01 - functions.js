@@ -50,19 +50,40 @@ const sumar = function(){
 };
 
 
-
+/******************************************
+ * 
+ * Funciones en variables vs funciones con nombre
+ * 
+ * El motor de javascript tiene dos tiempos, uno
+ * de compilación y uno de ejecución.
+ * Durante el tiempo de compilación, el motor,
+ * entre otras cosas, extrapola las funciones 
+ * con nombre (function nombre(){ codigo }) y 
+ * les da accesibilidad desde la primer línea de
+ * nuestro código.
+ * Por otro lado, durante el tiempo de ejecución
+ * el motor va línea por línea ejecutando las 
+ * instrucciones. Cuando llega a una variable
+ * reserva ese espacio en memoria y solo a 
+ * partir de ahí es accesible en nuestro código.
+ * Esto último sucede también con las funciones
+ * en variables. Por eso, el siguiente ejemplo
+ * muestra cómo se ejecutarían los códigos en 
+ * cada uno de los ejemplos posibles.
+ * 
+ ******************************************/
 try {
-    a();
+    a(); // undefined
 } catch(err){
     console.warn(err);
 }
 try {
-    b();
+    b(); // B
 } catch(err){
     console.warn(err);
 }
 try {
-    c();
+    c(); // undefined
 } catch(err){
     console.warn(err);
 }
@@ -77,17 +98,17 @@ const c = function(){
 }
 
 try {
-    a();
+    a(); // A
 } catch(err){
     console.warn(err);
 }
 try {
-    b();
+    b(); // B 
 } catch(err){
     console.warn(err);
 }
 try {
-    c();
+    c(); // C
 } catch(err){
     console.warn(err);
 }

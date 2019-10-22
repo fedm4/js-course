@@ -48,3 +48,47 @@ function sumar(){
 const sumar = function(){
     a += 2;
 };
+
+
+
+try {
+    a();
+} catch(err){
+    console.warn(err);
+}
+try {
+    b();
+} catch(err){
+    console.warn(err);
+}
+try {
+    c();
+} catch(err){
+    console.warn(err);
+}
+const a = () => {
+    console.log('A');
+};
+function b() {
+    console.log('B');
+}
+const c = function(){
+    console.log('C');
+}
+
+try {
+    a();
+} catch(err){
+    console.warn(err);
+}
+try {
+    b();
+} catch(err){
+    console.warn(err);
+}
+try {
+    c();
+} catch(err){
+    console.warn(err);
+}
+

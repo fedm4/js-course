@@ -44,3 +44,18 @@ const elevarAlCuadrado = () => {
  *    de valores del array en un console.log.
  * 
  ************************************************/
+
+ const miArray = [];
+
+ const cargarArray = () => {
+    let dato = prompt("Decime algo");
+    miArray.push(dato);
+ };
+
+ const mostrarLista = () => {
+    console.log(miArray);
+ };
+
+ const mostrarUltimo = () => {
+    console.log(    miArray[miArray.length - 1]);
+ };

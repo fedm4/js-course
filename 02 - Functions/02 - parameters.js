@@ -1,3 +1,19 @@
+alert("Hola soy un alert");
+let a = 1;
+let b = a;
+a // 1
+b // 1
+b = 2 
+a // 1
+b // 2
+///////////////
+let a = [1,2];
+let b = a;
+a // [1, 2]
+b // [1, 2]
+b[1] = 3
+a // [1,3]
+b // [1,3]
 /*****************************************
  * 
  * PARAMETROS
@@ -31,11 +47,15 @@
  * tiene un valor asignado, que va a ser usado en caso
  * de llamar a la funcion sin ese parámetro.
  * Ej:
- * myFunction("valor1"); //param1 va a tener el valor "valor1"
- *                       //param2 va a tener el valor "mi valor"
+ * myFunction("valor1"); //param1 va a tener el 
+ *                       // valor "valor1"
+ *                       //param2 va a tener el 
+ *                       //valor "mi valor"
  * 
- * myFunction("valor1", "2"); //param1 va a tener el valor "valor1"
- *                       //param2 va a tener el valor "2"
+ * myFunction("valor1", "2"); //param1 va a tener
+ *                              // el valor "valor1"
+ *                          //param2 va a tener el
+ *                          // valor "2"
  * 
  * También se pueden enviar funciones como parámetros.
  * De la misma forma que declaramos funciones en variables

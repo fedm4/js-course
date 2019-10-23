@@ -35,7 +35,9 @@ const elevarAlCuadrado = () => {
  *
  * 1. Crear un array vacío
  * 2. Hacer una funcion para llenar
- *    el array, pidiendo por prompt.
+ *    el array, pidiendo por prompt. Cada vez
+ *    que invoco la función, me muestra UN prompt y
+ *    lo carga en el array.
  * 3. Hacer una función que muestre en un alert
  *    el último valor agregado al array.
  * 4. Hacer una función para imprimir la lista

@@ -37,4 +37,20 @@
  * myFunction("valor1", "2"); //param1 va a tener el valor "valor1"
  *                       //param2 va a tener el valor "2"
  * 
+ * También se pueden enviar funciones como parámetros.
+ * De la misma forma que declaramos funciones en variables
+ * y las invocamos, podemos hacer esto con los parámetros
+ * de nuestra función.
+ * Ej:
+ * const miFuncion1 = () => { console.log(1); };
+ * const miFuncion2 = (callback) => { callback(); };
+ * miFuncion2(miFuncion1);
+ * // También puedo declarar la función directamente
+ * // en la invocación.
+ * const myFunction = (callback) => { callback(); };
+ * miFuncion2(() => { 
+ *      console.log("Mi función declarada en invocación") 
+ * });
+ *  
+ * 
  *****************************************/

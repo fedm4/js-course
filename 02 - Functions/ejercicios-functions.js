@@ -9,6 +9,12 @@
  *    "Hola <nombre>" en un alert. 
  * 
  ***********************************************/
+
+const saludo = () => {
+    let nombre = prompt("Decime tu nombre:");
+    alert(`Hola ${nombre}`);
+};
+
  //2.
  /***********************************************
  *
@@ -17,6 +23,13 @@
  * por prompt y mostrnadolo por alert.
  * 
  ***********************************************/
+
+const elevarAlCuadrado = () => {
+    let numero = prompt("Decime un numero");
+    //console.log(numero * numero);
+    console.log(Math.pow(numero, 2));
+};
+
  //3.
  /***********************************************
  *

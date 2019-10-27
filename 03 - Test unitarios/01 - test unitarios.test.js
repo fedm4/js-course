@@ -97,3 +97,22 @@ test('test de throw regex', ()=>{
  * a necesitar usando beforeEach() y afterEach(), 
  * o setear algunas cosas usando beforeAll y After
  */
+/*let funcionDefinida;
+let miData;
+beforeAll(()=>{
+    funcionDefinida = () => {
+        console.log(miData);
+    }
+    console.log('ejecuto before all');
+});
+beforeEach(()=>{
+    miData = 0;
+    console.log('ejecuto before each');
+});
+afterEach(()=>{
+    console.log('ejecuto after each')
+});
+afterAll(() => {
+    console.log('Ejecuto after all')
+});
+*/

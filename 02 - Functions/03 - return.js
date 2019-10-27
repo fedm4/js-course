@@ -18,10 +18,8 @@
  *      switch(value) {
  *          case 1:
  *              return "el valor fue 1";
- *              break;
  *          case 2:
  *              return "el valor fue 2";
- *              break;
  *          default:
  *              return "no nos interesa el valor ingresado";
  *      }

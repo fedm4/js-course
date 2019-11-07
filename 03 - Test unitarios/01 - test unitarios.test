@@ -20,7 +20,7 @@
  * Estos casos tienen que tener una descripción
  * clara y concisa de lo que debería suceder.
  */
-test('suma 2 al numero 4, devolviendome 6', () =>{
+/*test('suma 2 al numero 4, devolviendome 6', () =>{
     expect(sumaDos(4)).toBe(6);
 });
 test('suma 2 al numero 3, devolviendome 5', () => {
@@ -41,7 +41,7 @@ test('suma 2 al numero 1, devolviendome 3', ()=>{
  * por ejemplo, probar si un valor
  * es mayor a otro.
  */
-test('suma 2 devuelve un numero mayor a 1', ()=>{
+/*test('suma 2 devuelve un numero mayor a 1', ()=>{
     expect(sumaDos(0)).toBeGreaterThan(1);
 });
 
@@ -51,7 +51,7 @@ test('suma 2 devuelve un numero mayor a 1', ()=>{
  * De la misma forma puedo decir que no 
  * utilizando previo al match, el not.
  */
-test('string contiene palabra test', ()=>{
+/*test('string contiene palabra test', ()=>{
     expect("esto es un test").toMatch(/test/);
 });
 test('string no contiene la palabra test', () => {
@@ -67,7 +67,7 @@ test('string no contiene la palabra test', () => {
  * como con expresiones regulares.
  */
 
-const throwMeAnError = () => {
+/*const throwMeAnError = () => {
     throw new Error("This is an error");
 };
 const throwSimple = () =>{
@@ -85,7 +85,7 @@ test('test de throw', ()=>{
     expect(throwMeAnError).toThrow();
 });
 test('test de throw error', ()=>{
-    // Testea que el throw sea del tipo de dato Error.
+    // Testea que el throw sea delel tipo de dato Error.
     expect(throwMeAnError).toThrow(Error);
 });
 test('test de throw string', ()=>{
@@ -99,7 +99,7 @@ test('test de throw regex', ()=>{
  * a necesitar usando beforeEach() y afterEach(), 
  * o setear algunas cosas usando beforeAll y After
  */
-let funcionDefinida;
+/*let funcionDefinida;
 let miData;
 beforeAll(()=>{
     funcionDefinida = () => {
@@ -116,4 +116,49 @@ afterEach(()=>{
 });
 afterAll(() => {
     console.log('Ejecuto after all')
+});*/
+
+
+const getDia = (dia) => {
+    switch(dia) {
+        case "lunes": 
+            return 1;
+        case "martes":
+            return 2;
+        case "miercoles":
+            return 3;
+        case "jueves":
+            return 4;
+        case "viernes":
+            return 5;
+        case "sabado":
+            return 6;
+        case "domingo":
+            return 7;
+        default:
+            throw "El día no existe, guache.";
+    }
+};
+
+test('le paso "lunes" y devuelve 1', () => {
+    expect(getDia("lunes")).toBe(1);
+});
+test('le paso "martes" y devuelve 2', () =>{
+    expect(getDia("martes")).toBe(2);
+});
+
+test('le paso "miercoles" y devuelve 3', () =>{
+    expect(getDia("miercoles")).toBe(3);
+});
+test('le paso "sabado" y devuelve 6', () =>{
+    expect(getDia("sabado")).toBe(6);
+});
+test('le paso "domingo" y devuelve 7', () =>{
+    expect(getDia("domingo")).toBe(7);
+});
+
+test('le paso "demango" tira error', () =>{
+    expect(() => {
+        getDia("demango");
+    }).toThrow("El día no existe, guache.");
 });

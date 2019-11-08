@@ -136,3 +136,22 @@ test("filtra y no filtra", () => {
   expect(noFiltro[0][0]).toBe("Titulo 1");
   expect(noFiltro[6][0]).toBe("Titulo 7");
 });
+
+
+
+const arrayDeFede = [
+  "Fede 1",
+  "Fede 2",
+  "Fede 3",
+  "Fede capo"
+];
+
+for(let i = 0; i < arrayDeFede.length; i++){
+  // Hago algo
+  let item = arrayDeFede[i];
+  console.log(item);
+}
+
+for(let item of arrayDeFede) {
+  console.log(item);
+}

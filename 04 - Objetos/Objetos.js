@@ -64,13 +64,15 @@ const persona = {
     },
     direccion: {
         calle: "Castillo",
-        altura: "ah no se",
+        altura: "6xx",
         codigoPostal: "1414"
+    },
+    mostrarDireccion: function (){
+        console.log(`${this.direccion.calle} ${this.direccion.altura}`)
     }
 };
-
-console.log(persona["direccion"]["calle"])
-
+console.log(`${persona.direccion.calle} ${persona.direccion.altura}`)
+console.log(persona.direccion.calle + " " + persona.direccion.altura)
 /*****************************************
  * El "this" dentro de un metodo se refiere 
  * al objeto actual sobre el cual se está escribiendo. 

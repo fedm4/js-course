@@ -50,6 +50,9 @@ const persona = {
     saludo: function () {
         alert(`Hola! Soy ${this.nombre}`);
     },
+    saludoArrow: function () {
+        alert(`Hola! Soy ${persona.nombre}`);
+    },
     saludoEspecifico: function (otroNombre) {
         alert(`Hola ${otroNombre}, soy ${this.nombre}`)
     },
@@ -58,8 +61,15 @@ const persona = {
     },
     showThisArrow: () => {
         console.log(this);
+    },
+    direccion: {
+        calle: "Castillo",
+        altura: "ah no se",
+        codigoPostal: "1414"
     }
 };
+
+console.log(persona["direccion"]["calle"])
 
 /*****************************************
  * El "this" dentro de un metodo se refiere 

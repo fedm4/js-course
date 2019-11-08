@@ -1,7 +1,4 @@
 /**********************************************
- * EN GRUPOS DE 3-4, usando GIT, crear un repo
- * y trabajar en conjunto.
- * 
  * Hacer un programa que nos permita 
  * cargar/modificar/borrar
  * productos (deberían tener "id", como identificador 

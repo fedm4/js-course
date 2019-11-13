@@ -6,10 +6,11 @@
  * de producto y precio (float)).
  * 
  * Además de esto vamos a necesitar un carrito de compras
- * que nos permita cargar/modificar/borrar productos de 
+ * que nos permita cargar/borrar productos de 
  * nuestro carrito, sumar el precio total de los elementos
  * de nuestro carrito. 
  */
+
 
 /*************************************************
  * Crear un objeto que sea un libro, con todos 

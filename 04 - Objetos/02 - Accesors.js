@@ -10,14 +10,23 @@
  */
 
  const persona = {
-     nombre: "Federico",
-     edad: 33,
-     set ed(edad) {
-        this.edad = parseInt(edad);
+     _nombre: "fede",
+     _edad: 33,
+     set nombre (nombre) {
+        if(typeof nombre !== "string") {
+            throw "El nombre debe ser string";
+        }
+        this._nombre = nombre;
      },
-     get ed() {
-         return `${this.edad} años`;
+     get nombre () {
+        return this._nombre;
+     },
+     set edad(edad) {
+        this._edad = parseInt(edad);
+     },
+     get edad() {
+         return `${this._edad} años`;
      }
  }
- persona.ed = "34";
- console.log(persona.ed);
+ persona.edad = "34";
+ console.log(persona.edad);

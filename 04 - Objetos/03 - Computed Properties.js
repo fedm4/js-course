@@ -14,3 +14,5 @@ const miObj = {
     keyEstatica: "mi valor de key estatica",
     [miKey]: "mi valor de key dinamica"
 }
+
+miObj.keyDinamica // "mi valor de key dinamica"

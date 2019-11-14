@@ -35,7 +35,8 @@ class Gato {
     }
 }
 
-// Para crear un nuevo objeto lo llamamos con la 
+// Para instanciar(crear) un nuevo objeto 
+// lo hacemos con la 
 // palabra reservada "new"
 const michu = new Gato("Michu", 4);
 
@@ -60,3 +61,19 @@ const Gato = {
 // gato para usarlo como una "fabrica" de objetos
 // a diferencia de la clase que lo es por definicion
 const michu = Object.assign({}, Gato);
+
+
+/**
+ * Los metodos estaticos son metodos
+ * a los cuales puedo acceder sin 
+ * necesidad de instanciar un objeto. 
+ * O sea, no necesito tener un objeto
+ * para poder utilizar la funcionalidad.
+ */
+
+class Gato {
+    static maullar() {
+        return "miau!";
+    }
+}
+console.log(Gato.maullar());

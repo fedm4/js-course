@@ -32,3 +32,13 @@ class Perro {
 const Fido = new Perro("Galgo");
 console.log(Fido.especie); // Canido
 console.log(Fido.subespecie); // Galgo
+
+/**
+ * Para corroborar si las instancias
+ * son de un tipo definido, podemos
+ * usar "instanceof"
+ */
+console.log(Fido instanceof Perro); // True
+console.log(Fido instanceof Animal); // True
+console.log(Fido instanceof Object);  // True
+console.log(Fido instanceof Array); // False

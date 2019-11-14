@@ -9,4 +9,12 @@
  * "calzar" que no funcione si 
  * es una pollera, pero si 
  * funcione si es una zapatilla.
+ * 
+ * Crear varios tipos distintos de ropa.
  */
+
+ /**
+  * Transformar los distintos tipos de ropa
+  * del ejercicio anterior a nuevas clases
+  * que extiendan de la clase principal.
+  */

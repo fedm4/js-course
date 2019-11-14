@@ -12,7 +12,20 @@ console.log(b); //11
  * objetos, usando variables con el nombre de 
  * su indice.
  */
-({a, b, ...rest} = {a: 10, b: 20, c: 30, d: 40});
-console.log(a) // 10
-console.log(b) // 20
-console.log(rest) // {c: 30, d:40}
+{a, b, ...rest} = {a:1, b:2, c:3, d:4};
+console.log(a) // 1
+console.log(b) // 2
+console.log(rest) // {c: 3, d:4}
+
+/******************************************
+ * Se pueden recibir parametros de array
+ * y desestructurar de la misma forma
+ * que se hace en una asignacion.
+ */
+const myFunc = ([a, b, ...rest]) => {
+    console.log(a) // 1
+    console.log(b) // 2
+    console.log(rest) // {c: 3, d:4}        
+}
+myFunc([1,2,3,4]);
+

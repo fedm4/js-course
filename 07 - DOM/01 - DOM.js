@@ -30,5 +30,5 @@ document.querySelectorAll(".miClase") // o puedo obtener el mismo resultado con 
 window.alert == alert
 
 /**
- *
+ * 
  */

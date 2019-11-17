@@ -1,6 +1,10 @@
-const shopping = require('./productos'),
-    productos = shopping.productos,
-    carrito = shopping.carrito;
+const shopping = require('./productos');
+
+const productos = shopping.productos;
+const carrito = shopping.carrito;
+
+
+
 beforeEach(()=>{
     productos.lista = [];
     carrito.lista = [];

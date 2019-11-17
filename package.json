@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/fedm4/js-course/issues"
   },
-  "homepage": "https://github.com/fedm4/js-course#readme"
+  "homepage": "https://github.com/fedm4/js-course#readme",
+  "dependencies": {
+    "babel": "^6.23.0"
+  }
 }

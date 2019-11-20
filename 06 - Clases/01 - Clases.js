@@ -19,11 +19,35 @@
  * clases se radica en como crear un objeto 
  * nuevo.
  */
+const a = 1;
+let b = a;
+b = 2;
+a // 1
+b // 2
+/////////////////////////////
+const a = {valor1:1};
+const b = a;
+const c = Object.assign({}, a);
+b.valor1 = 2;
+a.valor1 // 2
+b.valor1 // 2
+c.valor1 // 1
+ 
+class Pelaje{
+    constructor(color){
+        this.color = color;
+    }
+}
 class Gato {
     constructor(nombre, edad, vidas = 7) {
         this.nombre = nombre;
         this.edad = edad;
         this.vidas = vidas;
+        this.especie = "felino";
+        this.cosas = {
+            esObjeto: true
+        };
+        this.pelaje = new Pelaje("Amarillo");
     }
 
     get edadGatuna () {
@@ -72,8 +96,27 @@ const michu = Object.assign({}, Gato);
  */
 
 class Gato {
-    static maullar() {
-        return "miau!";
+    static maullar(maullido = "miau!") {
+        return maullido;
     }
 }
 console.log(Gato.maullar());
+
+
+
+
+class Gato {
+    constructor() {
+        this._nombre = "";
+        this._edad = "";
+    }
+    set nombre (nombre) {
+        this._nombre = nombre;
+    }
+    set edad (edad) {
+        this._edad = edad;
+    }
+    get edad () {
+        return this._edad;
+    }
+}

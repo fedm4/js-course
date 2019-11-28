@@ -32,11 +32,3 @@
   * Obtener el array de todos los elementos dentro del <div>
   * usando unicamente selector por ID
   */
-
-
-//03
-/**
- * Crear un input de tipo checkbox.
- * Escribir una funcion que cambie el estado de 
- * clickeado a sin clickear o viceversa.
- */

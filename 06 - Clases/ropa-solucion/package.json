@@ -1,0 +1,11 @@
+{
+  "name": "ropa-solucion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ropa.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}

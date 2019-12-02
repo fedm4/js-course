@@ -45,7 +45,7 @@ document.querySelector("#myDiv").children[0].id // span1
  * Para agregar un javascript a nuestro HTML tenemos dos formas
  * de hacerlo.
  * La primera y menos recomendada es a través de poner el propio
- * código en la pagina. Este codigo puede ir en cualquier parte
+ * código en la página. Este codigo puede ir en cualquier parte
  * de nuestro html, incluyendo el <head>, pero es buena practica
  * ponerlo en el head o al final del archivo, dependiendo 
  * cuando querramos que se ejecute. Esto ultimo porque cuando se

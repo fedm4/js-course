@@ -31,13 +31,11 @@ window.alert == alert // true
 a = 12;
 console.log(window.a); // 12
 /**
- * Para acceder y navegar en nuestro documento podemos usar parentElement y children
+ * Para acceder y navegar en nuestro documento podemos usar 
+ * parentElement y children
  * 
  */
-<div id="myDiv">
-    <span id="span1"></span>
-    <span id="span2"></span>
-</div>
+c
 
 document.querySelector("#span1").parentElement.id; // myDiv
 document.querySelector("#myDiv").children; // [<span1>, <span2>]

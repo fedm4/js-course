@@ -14,7 +14,7 @@ el.setAttribute("style", "height: 200px; background: blue;");
  * sino "className"
  */
 
-el.className = "mi-clase"
+el.className = "mi-clase mi-clase2 ... mi-clasen"
 el.className // "mi-clase"
 el.classList // {Objeto con las clases}
 el.classList.add("mi-otra-clase");

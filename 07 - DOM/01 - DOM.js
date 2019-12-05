@@ -35,7 +35,10 @@ console.log(window.a); // 12
  * parentElement y children
  * 
  */
-c
+<div id="myDiv">
+    <span id="span1">Span 1</span>
+    <span id="span2">Span 2</span>
+</div>
 
 document.querySelector("#span1").parentElement.id; // myDiv
 document.querySelector("#myDiv").children; // [<span1>, <span2>]
@@ -55,6 +58,7 @@ document.querySelector("#myDiv").children[0].id // span1
  */
 <script>
     // mi codigo javascript
+    console.log("Hola!");
 </script>
 
 /**
@@ -63,4 +67,9 @@ document.querySelector("#myDiv").children[0].id // span1
  * rigen para esto. Tanto en el <head> como al final de mi 
  * archivo HTML, y dependiendo de cuando quiero ejecutarlo.
  */
-<script type="text/javascript" src="path/to/archivo.js"></script>
+<script type="text/javascript" src="path/to/archivo.js">
+</script>
+
+
+
+

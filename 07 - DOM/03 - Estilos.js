@@ -1,8 +1,8 @@
 /**
  * Podemos modificar los atributos de estilos.
  * Para esto, tenemos varias formas de trabajar
+ getComputedStyle(el) // Objeto con estilos
  */
-getComputedStyle(el) // Objeto con estilos
 el.style.height = "200px"; //
 el.cssText // "height: 200px"
 el.setAttribute("style", "height: 200px; background: blue;");

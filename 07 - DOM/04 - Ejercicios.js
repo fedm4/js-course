@@ -22,5 +22,5 @@
 
  // 003
  /**
-  * TODO: float labels
+  * 
   */

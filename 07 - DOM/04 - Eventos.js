@@ -35,3 +35,8 @@ input.onchange = event => {
 input.addEventListener("change", event => {
     // validate my password
 });
+
+let el = document.querySelector("#miId")
+el.addEventListener("keyup", (event) => {
+	console.log(event.target == el);
+});

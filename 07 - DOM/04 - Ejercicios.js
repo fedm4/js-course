@@ -22,5 +22,17 @@
 
  // 003
  /**
+  * Hacer un sistema para restaurant.
+  * Para esto necesitamos.
+  * 1. Lista de mesas - agregar, eliminar
+  * 2. Lista de productos con precio - Agregar, eliminar, modificar
+  * 3. Lista de mozos - Agregar, eliminar
   * 
+  * Y que nos permita obtener
+  * 4. Una cuenta por mesa (la mesa se abre, se cargan los productos, y 
+  * se cierra pidiendo el total consumido. Lista de cuentas con objetos)
+  * 5. Obtener el producto mas vendido
+  * 
+  * Y esto debe estar todo accesible desde una pagina web.
+  * TESTS de las funciones que no requieran DOM
   */

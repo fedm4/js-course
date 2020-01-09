@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js" integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs=" crossorigin="anonymous"></script>
+    <title>To Do!</title>
+    <style>
+        .todo-title, .todo-user {
+            border-right: 1px solid #999;
+        }
+        .todo-title, .todo-user, .todo-completed {
+            padding: 15px;
+        }
+        .card{
+            box-shadow: 0 0 5px #666;
+            padding: 25px;
+            margin: 25px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="todo-list">
+        <li class="todo-item">
+            <span class="todo-title">Mi Titulo</span>
+            <span class="todo-user">1</span>
+            <span class="todo-completed">Completed</span>
+            <button class="todo-edit">Editar</button>
+            <button class="todo-delete">Eliminar</button>
+        </li>
+    </ul>
+    <section class="card">
+        <h1>Modificar To Do</h1>
+        <input type="number" value="1" id="todo-id-update" />
+        <input type="text" value="mi titulo" id="todo-title-update" />
+        <input type="number" value="1" id="todo-user-update" />
+        <input type="checkbox" checked id="todo-completed-update" />
+        <button id="todo-update">Modificar</button>
+    </section>
+    <section class="card">
+        <h1>Agregar To Do</h1>
+        <input type="text" id="todo-title-create" placeholder="title"/>
+        <input type="number" id="todo-user-create" placeholder="user"/>
+        <button id="todo-create">Agregar</button>
+    </section>
+</body>
+</html>

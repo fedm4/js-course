@@ -5,20 +5,62 @@
  * la misma funcion. Fetch. Obtener.
  * 
  */
-
-fetch(url, {
+fetch(...).then(...).catch();
+let data = {
     method: 'POST', // *GET, POST, PUT, DELETE
     headers: {
         'Content-Type': 'application/json'
     },
-    body: JSON.stringify(data) // body data type must match "Content-Type" header
-}).then( res => {
-    // parse y return response
-    return JSON.parse(res);
-}).catch( err =>{
-    console.log(err); // Catch error como en try/catch
-});
+    body: JSON.stringify({employeeId: 1, name: "Fede"}) // body data type must match "Content-Type" header
+};
 
+fetch("https://mirecursoonline.com/bla", data)
+    .then( response => {
+        if(response.code !== 200) {
+            throw "error";
+        }
+        // parse y return response
+        return JSON.parse(response.data);
+    }).catch( err => {
+        console.log(err); // Catch error como en try/catch
+    });
+console.log("hola");
+
+
+fetch("pedir menu", {method: "GET"})
+    .then(menu =>{
+        let comidaElegida = elegirMorfi(menu);
+        return comidaElegida;
+    })
+    .then(comidaQueElegi => {
+        fetch(`pedir/${comidaQueElegi}`, {method: "GET"})
+            .then( bandeja => {
+                if(bandeja.status === "llena") {
+                    comerComida(bandeja.comida);
+                }
+            })
+            .catch(error =>{
+                "hubo un error con tu comida"
+            });
+            servirCocucha();      
+    })
+    .catch();
+
+ponerCubiertos();
+
+
+fetch("crear en menu", {
+    method: "POST",
+    body: {plato: "milanesa", guarnicion: "papas fritas"}
+}).then(response => {
+    if(response.status !== 200) {
+        throw "Hubo un error creando milanesa";
+    }
+    console.log(response.data) // { plato: "milanesa", guarnicion: "papas fritas"};
+})
+
+// hola
+// chau
 /**
  * Tenemos la api de Fetch, un standard que viene en todos los browsers, y como podemos
  * observar en el ejemplo anterior, estamos encadenando .then y .catch en nuestra ejecución
@@ -64,7 +106,7 @@ axios.put('https://jsonplaceholder.typicode.com/posts/1', {
     title: " NUEVO TITULO",
     body: "Nuevo cuerpo",
     userId: 1
-}).then(res => console.log(res.data))
+}).then(res => console.log(res))
     .catch(err => {throw err;});
    
 

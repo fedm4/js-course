@@ -10,16 +10,16 @@
 
  // promesas / ejecuta el codigo y sigue 
 const promiseFetch = () =>{
-    fetch("https://google.com")
+    axios.get("https://jsonplaceholder.typicode.com/todos")
         .then(res => console.log(res))
         .catch(err => console.log(err));
     console.log("Termino fetch promise");
 }
 
-const asyncAwaitFetch = async () => {
+const asyncAwaitFetch = async (param1, param2) => {
     try {
-        const data = await fetch("https://google.com");
-        console.log(data);
+        const res = await axios.get("https://jsonplaceholder.typicode.com/todos");
+        console.log(res);
     } catch (err) {
         console.log(err);
     }
@@ -40,3 +40,9 @@ const asyncAwaitFetch = async () => {
  * para agarrar aquellos errores que puedan surgir de este codigo. Como se puede
  * ver hasta incluso es codigo mas legible y practico a la hora de entenderlo.  
  */
+
+
+
+ console.log("hola"); //
+ asyncAwaitFetch();
+ console.log("chau");

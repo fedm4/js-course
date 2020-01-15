@@ -40,12 +40,13 @@ const createTodo = (title, userId) => {
 };
 
 const deleteTodo = id => {
-    return axios.delete(`${baseUrl}/${id}`)
+    axios.delete(`${baseUrl}/${id}`)
         .then(res => {
             const index = lista.findIndex(todo => {
                 return todo.id == id;
             })
             lista.splice(index, 1);
+            armarHtml();
         })
         .catch(handleError);
 };
@@ -70,6 +71,7 @@ const modifyTodo = (id, title, userId, completed) => {
 
 const armarHtml = () =>{
     const ul = document.querySelector("#todo-list");
+    ul.innerHTML ="";
     for(let todo of lista) {
         const li = document.createElement("li");
         const title = document.createElement("span");
@@ -94,3 +96,12 @@ const armarHtml = () =>{
 }
 
 getTodos().then(armarHtml);
+
+boton.addEventListener("click", ()=>{
+    let input = document.querySelector("#miinput");
+    // input...
+    createTodo().then(armarHtml);
+    input.value = "";
+
+});
+

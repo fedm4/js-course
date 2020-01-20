@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap');
+
+.playing-card-title-content{
+    background-color: #333;
+    box-sizing: border-box;
+    color: #F3F3F3; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    height: 110px;
+    padding: 30px;
+    position: relative;
+}
+
+.playing-card-title-content-image-container {
+    align-items: center;
+    background-color: #F3F3F3;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #666;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    left: 30px;
+    position: absolute;
+    top: 80px;
+    width: 50px;
+}
+.playing-card-title-content-image{
+    width: 25px;
+}
+
+.playing-card-title-content-value {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.playing-card-title-content-title {
+    font-size: 18px;
+    text-transform: uppercase;
+}

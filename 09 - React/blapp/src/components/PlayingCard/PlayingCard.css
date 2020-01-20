@@ -1,0 +1,23 @@
+.playing-card {
+        /*Temporal*/
+        margin: 30px auto;
+        border-radius: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 0 3px #666;
+        height: 480px;
+        overflow: hidden;
+        width: 360px;
+}
+.playing-card-content {
+    align-items: center;
+    display: flex;
+    height: 260px;
+    justify-content: center;
+}
+.playing-card-content img {
+    width: 300px;
+}
+
+.playing-card-footer{
+    transform: rotate(180deg);
+}

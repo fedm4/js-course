@@ -1,0 +1,24 @@
+.card {
+    box-shadow: 0 0 5px #666;
+    height: 500px;
+    position: relative;
+    width: 400px;
+}
+.card-header{
+    height: 200px;
+    overflow: hidden;
+    background-position: center;
+    background-size: 100%;
+}
+.card-article {
+    padding: 10px;
+}
+.rss-link {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.rss{
+    width: 25px;
+    height: 25px;
+}

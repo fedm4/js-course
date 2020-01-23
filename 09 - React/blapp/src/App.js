@@ -7,21 +7,42 @@ import Hearts from './components/PlayingCard/Icons/heart.svg';
 import Diamond from './components/PlayingCard/Icons/diamond.svg';
 import Clover from './components/PlayingCard/Icons/clover.svg';
 
+const cards = [
+  {
+    cardTitle: "Ace of Clover",
+    cardNumber: "A",
+    cardType: Clover
+  },
+  {
+    cardTitle: "2 of Hearts",
+    cardNumber: "2",
+    cardType: Hearts
+  },
+  {
+    cardTitle: "4 of Diamonds",
+    cardNumber: "4",
+    cardType: Diamond
+  },
+  {
+    cardTitle: "Jack of Spades",
+    cardNumber: "J",
+    cardType: Spades
+
+  }
+];
+
 const App = () => {
+
   return (
-    <div>
-      <PlayingCard cardTitle="Ace of Clover"
-                   cardNumber="A"
-                   cardType={Clover}></PlayingCard>
-      <PlayingCard cardTitle="2 of Hearts"
-                  cardNumber="2"
-                  cardType={Hearts}></PlayingCard>
-      <PlayingCard cardTitle="4 of Diamonds"
-                  cardNumber="4"
-                  cardType={Diamond}></PlayingCard>
-      <PlayingCard cardTitle="Jack of Spades"
-                  cardNumber="J"
-                  cardType={Spades}></PlayingCard>
+    <div style={{display: 'flex', justifyContent:'space-between', flexWrap: "wrap"}}>
+      
+      {cards.map(card => {
+        return (<PlayingCard key={card.cardTitle}
+                   cardTitle={card.cardTitle}
+                   cardNumber={card.cardNumber}
+                   cardType={card.cardType}></PlayingCard>);
+      })}
+    
     </div>
     );
 }

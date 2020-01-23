@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap');
 
 .playing-card-title-content{
-    background-color: #333;
     box-sizing: border-box;
     color: #F3F3F3; 
     display: flex;

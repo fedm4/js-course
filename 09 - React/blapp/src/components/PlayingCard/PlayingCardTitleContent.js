@@ -5,7 +5,7 @@ import './PlayingCardTitleContent.css';
 
 const PlayingCardTitleContent = props => {
     return (
-        <div className="playing-card-title-content">
+        <div className="playing-card-title-content" style={{backgroundColor: props.cardColor}}>
             <span className="playing-card-title-content-value">{props.cardNumber}</span>
             <h1 className="playing-card-title-content-title">{props.cardTitle}</h1>
             <div className="playing-card-title-content-image-container">

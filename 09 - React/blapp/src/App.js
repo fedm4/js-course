@@ -7,11 +7,11 @@ import Input from './components/Input/Input';
 import TextCounter from './components/TextCounter/TextCounter';
 import BadgeClass from './components/Badge/BadgeClass';
 import TextCounterClass from './components/TextCounter/TextCounterClass';
+import ListaApi from './components/ListaApi/ListaApi';
 const App = () => {
   return (
     <div>
-      <TextCounter></TextCounter>
-      <TextCounterClass></TextCounterClass>
+      <ListaApi></ListaApi>
     </div>  
     );
 }

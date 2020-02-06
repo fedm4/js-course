@@ -6,8 +6,7 @@ const max = 140;
 export default class TextCounterClass extends React.Component {
     constructor(props) {
         super(props)
-        console.log("constructor");
-        // hago algo en el constructor
+        console.log('constructor');
     }
     state = {
         counter: 140,
@@ -27,6 +26,7 @@ export default class TextCounterClass extends React.Component {
         //FETCH
         this.setState({apiRes: "RES"});
     }
+
 
     render() {
         // hago algo en el render

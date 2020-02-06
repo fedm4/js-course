@@ -8,10 +8,11 @@ import TextCounter from './components/TextCounter/TextCounter';
 import BadgeClass from './components/Badge/BadgeClass';
 import TextCounterClass from './components/TextCounter/TextCounterClass';
 import ListaApi from './components/ListaApi/ListaApi';
+import ListaApiFuncional from './components/ListaApi/ListaApiFuncional';
 const App = () => {
   return (
     <div>
-      <ListaApi></ListaApi>
+      <ListaApiFuncional></ListaApiFuncional>
     </div>  
     );
 }

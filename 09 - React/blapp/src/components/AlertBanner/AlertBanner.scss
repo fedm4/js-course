@@ -1,0 +1,19 @@
+.alert-banner{
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    &.success {
+        border-left: 10px solid #155724;
+        background-color:lighten(#155724, 20);
+        color: white;
+    }
+    &.error {
+        border-left: 10px solid darken(crimson,20);
+        background-color: crimson;
+        color: white;
+    }
+}

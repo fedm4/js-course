@@ -6,15 +6,15 @@ const handleOnSubmit = event => {
     event.preventDefault();
     console.log("ESTOY EVITANDO QUE SUBMITEE");
 };
-
-const Input = () => {
+//e=>{
+//    const el = document.querySelector("#text");
+//    el.innerHTML = e.target.value;
+//}
+const Input = ({titleSetter}) => {
     return (
         <form onSubmit={handleOnSubmit} action="http://google.com">
         <input 
-            onChange={e=>{
-                const el = document.querySelector("#text");
-                el.innerHTML = e.target.value;
-            }}
+            onChange={e => titleSetter(e.target.value)}
             className="mi-input"
             type="text"
             placeholder="soy un input" />

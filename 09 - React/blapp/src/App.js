@@ -12,18 +12,24 @@ import ListaApi from './components/ListaApi/ListaApi';
 import ListaApiFuncional from './components/ListaApi/ListaApiFuncional';
 import AlertBanner from './components/AlertBanner/AlertBanner';
 import useMultiply from './components/useMultiply/useMultiply';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faAddressBook} from '@fortawesome/free-solid-svg-icons';
 
+import {
+  BrowserRouter,
+  Switch,
+  Route
+} from 'react-router-dom';
 
-
-
+import Links from './sections/Links/Links';
+import SwitchComponent from './sections/SwitchComponents/SwitchComponents';
 
 const App = () => {
-  const [title, setTitle] = useState("");
   return (
-    <div>
-      <Input titleSetter={setTitle}></Input>
-      <Card title={title}></Card>
-    </div>  
+    <BrowserRouter>
+      <Links />
+      <SwitchComponent/>
+    </BrowserRouter>  
     );
 }
 

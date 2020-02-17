@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/fedm4/js-course#readme",
   "dependencies": {
-    "babel": "^6.23.0"
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-regular-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.8",
+    "babel": "^6.23.0",
+    "react-router-dom": "^5.1.2"
   }
 }

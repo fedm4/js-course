@@ -18,7 +18,8 @@ import {faAddressBook} from '@fortawesome/free-solid-svg-icons';
 import {
   BrowserRouter,
   Switch,
-  Route
+  Route,
+  Link
 } from 'react-router-dom';
 
 import Links from './sections/Links/Links';
@@ -26,10 +27,12 @@ import SwitchComponent from './sections/SwitchComponents/SwitchComponents';
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Links />
-      <SwitchComponent/>
-    </BrowserRouter>  
+    <div>
+      <BrowserRouter>
+        <Links />
+        <SwitchComponent/>
+      </BrowserRouter>
+    </div> 
     );
 }
 

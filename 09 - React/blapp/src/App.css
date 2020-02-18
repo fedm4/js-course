@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+.App.light{
+  background-color: #fff;
+}
+.App.dark{
+  background-color: #333;
+}

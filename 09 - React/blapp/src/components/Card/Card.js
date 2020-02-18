@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Rss from './rss.svg';
 import './Card.css';
+import ThemeContext from '../../ThemeContext';
 
 const Card = props => {
+    const {theme} = useContext(ThemeContext);
     return (
-        <section className="card">
+        <section className={`card ${theme}`}>
             <header className="card-header" style={
                 {
                     backgroundImage: `url(${props.headerImgUrl})`

@@ -10,10 +10,6 @@
  * 
  ***********************************************/
 
-const saludo = () => {
-    let nombre = prompt("Decime tu nombre:");
-    alert(`Hola ${nombre}`);
-};
 
  //2.
  /***********************************************
@@ -24,11 +20,6 @@ const saludo = () => {
  * 
  ***********************************************/
 
-const elevarAlCuadrado = () => {
-    let numero = prompt("Decime un numero");
-    //console.log(numero * numero);
-    console.log(Math.pow(numero, 2));
-};
 
  //3.
  /***********************************************
@@ -45,17 +36,3 @@ const elevarAlCuadrado = () => {
  * 
  ************************************************/
 
- const miArray = [];
-
- const cargarArray = () => {
-    let dato = prompt("Decime algo");
-    miArray.push(dato);
- };
-
- const mostrarLista = () => {
-    console.log(miArray);
- };
-
- const mostrarUltimo = () => {
-    console.log(    miArray[miArray.length - 1]);
- };

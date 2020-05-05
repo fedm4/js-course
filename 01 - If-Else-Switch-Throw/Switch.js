@@ -1,3 +1,9 @@
+/**
+ * Switch - Case me permite utilizar una variable 
+ * para comparar con su valor y ejecutar una acción.
+ * Esto reduce y ordena el código que podría hacerse 
+ * con IF-ElseIf-Else.
+ */
 let booleano = true;
 let variable = "primer valor";
 

@@ -19,42 +19,4 @@
  * 
  ****************************************************************************/
 
-try {
-    let dia = prompt("dia de la semana");
-    dia = dia.toLowerCase();
-    switch(dia) {
-        case "lunes":
-            console.log(1);
-            break;
-        case "martes":
-            console.log(2);
-            break;
-        case "miércoles":
-        case "miercoles":
-            console.log(3);
-            break;
-        case "jueves":
-            console.log(4);
-            break;
-        case "viernes":
-            console.log(5);
-            break;
-        case "sábado":
-        case "sabado":
-            console.log(6);
-            break;
-        case "domingo":
-            console.log(7);
-            break;
-        default:
-            throw "No Existe El Dia Ingresado";
-    }
-} catch (err) {
-    console.warn(err);
-    throw "Error en switch de dias";
-} finally {
-    console.log("Proceso terminado en x segundos");
-}
-
-console.log("mensaje nuevo");
 

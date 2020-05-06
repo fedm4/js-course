@@ -58,6 +58,10 @@ console.log(miVariableString);
  *       - es modificable
  * CONST - de constante
  *       - no es modificable 
+ * 
+ * Las constantes guardan valor igual que una variable, pero no pueden ser modificadas.
  */
 
  const NOMBRE_DE_FEDE = "Fede";
+
+ NOMBRE_DE_FEDE = "otro nombre"; // Tira error

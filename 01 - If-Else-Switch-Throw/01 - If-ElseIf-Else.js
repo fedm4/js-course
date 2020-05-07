@@ -24,3 +24,129 @@
   * >= comparo si es mayor o igual
   * <= comparo si es menor o igual
   */
+console.log(1 === 1);
+console.log(1 === 2);
+console.log(1 !== 2);
+console.log(1 !== 1);
+
+console.log(1 > 2);
+console.log(1 > 0);
+console.log(1 > 1);
+console.log(1 >= 2);
+console.log(1 >= 0);
+console.log(1 >= 1);
+
+console.log(1 < 2);
+console.log(1 < 0);
+console.log(1 < 1);
+console.log(1 <= 2);
+console.log(1 <= 0);
+console.log(1 <= 1);
+
+if(1 === 1) {
+    console.log("Esto va a ejecutar");
+}
+if(1 === 2) {
+    console.log("Esto no va a ejecutar");
+}
+
+/**
+ * Puedo, además encadenar diferentes comparaciones, utilizando dos operadores
+ * && - and (y)
+ * || - or (o)
+ */
+
+ if(1 === 1 && 2 !== 1) { // Entra si la primera condición Y la segunda condición, son ambas true
+     console.log("Esta condición me permite entrar");
+ }
+ if(1 === 2 || 2 !== 1) {
+    console.log("Esta condición me permite entrar");
+ }
+
+ /**
+  * Las condiciones, ejemplificadas con números, dan resultados que siempre
+  * van a ser iguales. Nosotros vamos a estar usando variables para comparar
+  * dado que las variables van a guardar aquello que los usuarios pueden 
+  * modificar. Es lo que va a generar que nuestra aplicación no corra
+  * siempre igual
+  */
+
+const nombre = prompt("Digame su nombre");
+
+if(nombre === "") { // Comparo la variable con un string vacío.
+    alert("Por favor, digame su nombre");
+}
+if(nombre === "Fede") {
+    alert("Por favor, retírese sin hacer escándalo.");
+}
+if(nombre !== "Fede" && nombre !== "") { // Compruebo que la variable no sea Fede ni un string vacío. 
+    alert("Bienvenide!");
+}
+
+/**
+ * Este código que vemos aquí puede mejorarse muchísimo utilizando dos cosas más
+ * else y else if. Comencemos con el else.
+ */
+const nombre = prompt("Digame su nombre");
+if(nombre === "") {
+    alert("Por favor, digame su nombre");
+} else {
+    alert("Bienvenide!");
+}
+
+/**
+ * Si la condición NO se cumplió, se ejecuta el bloque "else".
+ * 
+ * Por último podemos agregar condiciones encadenadas, que se vayan
+ * leyendo una por una, hasta que alguna de ellas se cumpla.
+ * Esto es "else if"
+ */
+if(nombre === "") { // Si se cumple, entra y no se ejecuta ningún else o else if. Si no se cumple, pasa al else if
+    alert("Por favor, digame su nombre");
+} else if(nombre === "Fede") { // Si se cumple, entra y no se ejecuta el else. Si no se cumple, se ejecuta el else.
+    alert("Por favor, retírese sin hacer escándalo.");
+} else { // Se ejecuta si ninguna condición anterior se cumplió.
+    alert("Bienvenide!");
+}
+
+/**
+ * Puedo encadenar todos los else if que necesite. Puede ser uno, como 10, 100, o 1000.
+ * Claro que nunca tiene sentido tener ni 1000, ni 100, o incluso 10, suelen ser como mucho 3 o 4.
+ * pero los límites los ponemos nosotros diseñando mejor nuestro algoritmo.
+ */
+/**
+ * Por último vamos a hablar de ifs anidados.
+ * Podemos "anidar", meter ifs dentro de otros ifs.
+ * Esto nos permite generar otro tipo de algoritmo, con resultados distintos.
+ * En el caso de ejemplo, vemos como SOLO muestro mensaje si las condiciones
+ * de string vacío y nombre "Fede" no se cumplen. 
+ * Estoy ahorrandome el "else" PERO a cambio estoy perdiendo los mensajes
+ * específicos para cada caso. Esto siempre va a depender de lo que nosotros
+ * querramos hacer, de nuestro diseño.
+ */
+if(nombre !== "") {
+    if(nombre !== "Fede") {
+        alert("Bienvenide!");
+    }
+}
+
+/**
+ * Aclaraciones sobre comparadores.
+ * Tenemos dos tipos de comparadores, comparadores comunes, y comparadores estrictos.
+ * Nosotros, hasta ahora, solo vimos comparadores estrictos. Es decir, comparadores
+ * que comparan valor Y tipo de dato.
+ */
+console.log(1 === 1) // true - mismo tipo de dato, mismo valor.
+console.log(1 === "1"); // false - diferente tipo de dato, mismo valor.
+
+/**
+ * Los comparadores comunes, por otro lado, solo comparan el valor.
+ * Es decir, el tipo de dato puede variar, pero el valor debe ser el mismo.
+ */
+console.log(1 == 1); // true - mismo tipo de dato, mismo valor
+console.log(1 == "1"); // true - diferente tipo de dato, mismo valor.
+console.log(1 == 2) // false - mismo tipo de dato, diferente valor.
+
+/**
+ * Estos comparadores estrictos SOLO son === y !==, comparables a == y !==
+ */

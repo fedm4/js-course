@@ -30,7 +30,6 @@ let miVariableNumerFloat = 54.322;
 let miVariableBoolean = true; // Boolean - Verdadero o False (true - false) - Son los únicos valores posibles booleanos
 let miVariableVacia = null; // null - Sirve para indicar que algo no existe o no tiene  valor
 let miVariableUndefined = undefined; // undefined - valores que no han sido definidos. Si yo declaro una variable
-                                     // sin asignarle un valor, por default será undefined.
 
 /**
  * Estos valores puedo leerlos

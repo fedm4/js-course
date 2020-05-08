@@ -28,9 +28,9 @@ if(
 /*************************************************************************************
  * Pedir dos prompts, deben ser largoPelo y barba.
  * Largo pelo pueden ser dos valores, "largo" o "corto". 
- * Barba puede ser true o false.
+ * Barba puede ser "si" o "no".
  * Hacer if-elseif-else para ofrecer corte de pelo si el pelo es largo, y afeitada si
- * barba es true. 
+ * barba es "si". 
  * alert("Corte y afeitada") o alert("Corte").
  * Poner un alert en caso de que no se haga ni corte ni afeitada.
  ****************************************************************************************/

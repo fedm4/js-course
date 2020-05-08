@@ -18,30 +18,32 @@
   * un valor booleano (true o false)
   * Los operadores son 
   * === comparo si los valores son iguales
-  * !== comparo si los valores son diferente
+  * !== comparo si los valores son diferentes
   * > comparo si un valor (izquierda) es mayor a otro (derecha)  - valor1 >  valor2
   * < comparo si un valor (izquierda) es menor a otro (derecha) - valor1 < valor2
   * >= comparo si es mayor o igual
   * <= comparo si es menor o igual
   */
-console.log(1 === 1);
-console.log(1 === 2);
-console.log(1 !== 2);
-console.log(1 !== 1);
+console.log(1 === 1); // true
+console.log(1 === 2); // false 
+console.log(1 !== 2); // true
+console.log(1 !== 1); // false
 
-console.log(1 > 2);
-console.log(1 > 0);
-console.log(1 > 1);
-console.log(1 >= 2);
-console.log(1 >= 0);
-console.log(1 >= 1);
+console.log(1 > 2); // false
+console.log(1 > 0); // true
+console.log(1 > 1); // false
 
-console.log(1 < 2);
-console.log(1 < 0);
-console.log(1 < 1);
-console.log(1 <= 2);
-console.log(1 <= 0);
-console.log(1 <= 1);
+console.log(1 >= 2); // false
+console.log(1 >= 0); // true
+console.log(1 >= 1); // true
+
+console.log(1 < 2); // true
+console.log(1 < 0); // false
+console.log(1 < 1); // false
+
+console.log(1 <= 2); // true
+console.log(1 <= 0); // false
+console.log(1 <= 1); // true
 
 if(1 === 1) {
     console.log("Esto va a ejecutar");
@@ -55,7 +57,7 @@ if(1 === 2) {
  * && - and (y)
  * || - or (o)
  */
-
+ 
  if(1 === 1 && 2 !== 1) { // Entra si la primera condición Y la segunda condición, son ambas true
      console.log("Esta condición me permite entrar");
  }
@@ -88,6 +90,7 @@ if(nombre !== "Fede" && nombre !== "") { // Compruebo que la variable no sea Fed
  * else y else if. Comencemos con el else.
  */
 const nombre = prompt("Digame su nombre");
+
 if(nombre === "") {
     alert("Por favor, digame su nombre");
 } else {
@@ -101,6 +104,8 @@ if(nombre === "") {
  * leyendo una por una, hasta que alguna de ellas se cumpla.
  * Esto es "else if"
  */
+let nombre = prompt("Digame su nombre");
+
 if(nombre === "") { // Si se cumple, entra y no se ejecuta ningún else o else if. Si no se cumple, pasa al else if
     alert("Por favor, digame su nombre");
 } else if(nombre === "Fede") { // Si se cumple, entra y no se ejecuta el else. Si no se cumple, se ejecuta el else.

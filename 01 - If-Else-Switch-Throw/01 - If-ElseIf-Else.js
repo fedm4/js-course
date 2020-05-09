@@ -155,3 +155,34 @@ console.log(1 == 2) // false - mismo tipo de dato, diferente valor.
 /**
  * Estos comparadores estrictos SOLO son === y !==, comparables a == y !==
  */
+
+ /**
+  * Por otro lado podemos simplemente corroborar si un valor es "truthy" (tiene un valor verdadero)
+  * o falsy (tiene un valor falso).
+  */
+ // algunos valores truthy son:
+ if(1) {} // truthy 
+ if(true){} // truthy
+ if("un texto"){} // truthy
+
+ // la lista de valores falsy es:
+ if(0) {}// falsy
+ if(false) {}// falsy
+ if("") {}// falsy
+ if(null) {}// falsy
+ if(undefined) {} // falsy
+
+ /**
+  * Tenemos una forma de simplificar los if
+  * Esta forma es el operador ternario.
+  * Yo hago una pregunta y depende de su respuesta, devuelvo
+  * un resultado u otro.
+  */
+  const miText = miVariable ? 'Texto si es true' : 'Texto si es false';
+  
+  // Desglosando esto es:
+  const miText = // Aqui estoy creando una constante donde voy a guardar mi data condicional
+  miVariable ? // Literalmente estoy preguntando si miVariable es true o false. Esta es la condición del if
+  'Texto si es true' // El operador ternario "Devuelve" (como un mixin de sass, por ejemplo), este texto, si la condición fue true
+  : // Con esto separo el valor que devuelvo si es true, del valor que devuelvo si es false
+  'Texto si es false' // El operador ternario devuelve este texto si la condición fue false. 

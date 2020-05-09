@@ -135,6 +135,16 @@ if(nombre !== "") {
     }
 }
 
+if(nombre !== "") {
+    if(nombre !== "Fede") {
+        alert("Bienvenide!");
+    } else {
+        alert("Fedes malvenidos.");
+    }
+} else {
+    alert("Decime tu nombre");
+}
+
 /**
  * Aclaraciones sobre comparadores.
  * Tenemos dos tipos de comparadores, comparadores comunes, y comparadores estrictos.
@@ -148,10 +158,20 @@ console.log(1 === "1"); // false - diferente tipo de dato, mismo valor.
  * Los comparadores comunes, por otro lado, solo comparan el valor.
  * Es decir, el tipo de dato puede variar, pero el valor debe ser el mismo.
  */
-console.log(1 == 1); // true - mismo tipo de dato, mismo valor
+console.log(1 == 1);   // true - mismo tipo de dato, mismo valor
 console.log(1 == "1"); // true - diferente tipo de dato, mismo valor.
-console.log(1 == 2) // false - mismo tipo de dato, diferente valor.
+console.log(1 == 2);   // false - mismo tipo de dato, diferente valor.
 
+console.log(1 != "1"); // false
+console.log(1 !== "1"); // true
+
+1 == "1" // No importa si 1 es string o número, comparo el 1
+// es equivalente a 
+1 === parseInt("1") // ParseInt("1") me devuelve 1. Un Number
+
+// Coerción
+
+// 1 ES igual ESTRICTO a parseInt("1")
 /**
  * Estos comparadores estrictos SOLO son === y !==, comparables a == y !==
  */
@@ -162,6 +182,7 @@ console.log(1 == 2) // false - mismo tipo de dato, diferente valor.
   */
  // algunos valores truthy son:
  if(1) {} // truthy 
+ if(45) {} // truthy 
  if(true){} // truthy
  if("un texto"){} // truthy
 
@@ -172,17 +193,80 @@ console.log(1 == 2) // false - mismo tipo de dato, diferente valor.
  if(null) {}// falsy
  if(undefined) {} // falsy
 
- /**
-  * Tenemos una forma de simplificar los if
-  * Esta forma es el operador ternario.
-  * Yo hago una pregunta y depende de su respuesta, devuelvo
-  * un resultado u otro.
-  */
-  const miText = miVariable ? 'Texto si es true' : 'Texto si es false';
-  
-  // Desglosando esto es:
-  const miText = // Aqui estoy creando una constante donde voy a guardar mi data condicional
-  miVariable ? // Literalmente estoy preguntando si miVariable es true o false. Esta es la condición del if
-  'Texto si es true' // El operador ternario "Devuelve" (como un mixin de sass, por ejemplo), este texto, si la condición fue true
-  : // Con esto separo el valor que devuelvo si es true, del valor que devuelvo si es false
-  'Texto si es false' // El operador ternario devuelve este texto si la condición fue false. 
+// podriamos refactorizar esto
+const nombre = prompt("Digame su nombre");
+
+if(nombre === "") { // Comparo la variable con un string vacío.
+    alert("Por favor, digame su nombre");
+} else {
+    alert("Bienvenide!");
+}
+// a
+const nombre = prompt("Digame su nombre");
+
+if(nombre) { // Chequeo si es truthy
+    alert("Bienvenide!");
+} else {
+    alert("Por favor digame su nombre");
+}
+
+/**
+ * Negación.
+ */
+
+if(0 == false) //
+if(!0)
+// El valor que te voy a pasar luego de la exclamación ¿es falsy? 
+
+// O podriamos refactorizar esto
+const nombre = prompt("Digame su nombre");
+
+if(nombre === "") { // Comparo la variable con un string vacío.
+    alert("Por favor, digame su nombre");
+}
+// a
+const nombre = prompt("Digame su nombre");
+
+if(!nombre) { // Comparo la variable falsy.
+    alert("Por favor, digame su nombre");
+}
+
+
+//
+
+const nombre = prompt("Digame su nombre");
+
+if(!nombre) {
+    alert("El valor es falsy");
+}else {
+   alert("El valor es truthy");
+}
+
+
+/**
+ * Tenemos una forma de simplificar los if
+ * Esta forma es el operador ternario.
+ * Yo hago una pregunta y depende de su respuesta, devuelvo
+ * un resultado u otro.
+ */
+const miVariable=true;
+const miText = miVariable ? 'Texto si es true' : 'Texto si es false';
+// Eequivale a
+let miText;
+if(miVariable) {
+    miText = 'Texto si es true';
+} else {
+    miText = 'Texto si es false';
+}
+
+// Desglosando esto es:
+const miText = // Aqui estoy creando una constante donde voy a guardar mi data condicional
+miVariable ? // Literalmente estoy preguntando si miVariable es truthy o falsy. Esta es la condición del if
+'Texto si es true' // El operador ternario "Devuelve" (como un mixin de sass, por ejemplo), este texto, si la condición fue true
+: // Con esto separo el valor que devuelvo si es true, del valor que devuelvo si es false
+'Texto si es false' // El operador ternario devuelve este texto si la condición fue false. 
+
+const edad = prompt("Cual es tu edad?");
+console.log(typeof edad); // String
+const mensaje = edad >= 18 ? 'Ya podés ir preso' : 'Envidia juventud'; //coerción de edad a número.
+alert(mensaje);

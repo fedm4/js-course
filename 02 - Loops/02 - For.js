@@ -17,6 +17,6 @@
  * usar mi variable i, que vive solo mientras existe este for. 
  */
 for (let i = 0; i < 10; i++) {
-    console.log(`Ejecutando - Valor de i = ${i}`);
+    console.log(`Ejecutando - Valor de i = ${i}`); // Ejecutando - Valor de i = 0
 }
-console.log(i); // ReferenceError
+console.log(i); // ReferenceError - undefined

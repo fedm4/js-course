@@ -13,7 +13,7 @@ let numero = 0;
 
 while (numero < 10) {
   console.log(numero);
-  numero++; // numero = numero + 1  // numero += 1 // le suman 1 a numero
+  numero++; // numero = numero + 1  // numero += 1 // le suman 1 a numerogit
 }
 /**
  * Con tan solo un par de lineas de código podemos mostrar todos los números 

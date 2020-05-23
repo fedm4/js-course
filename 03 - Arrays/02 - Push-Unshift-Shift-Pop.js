@@ -1,4 +1,4 @@
-Push
+// Push
 /**
  * El método push permite agregar uno o más elementos al final de un array
  * Retorna la nueva longitud que tiene el array
@@ -6,8 +6,8 @@ Push
  * Ejemplo:
  */
 
-var techsFrontend = ['react', 'vue', 'angular'];
-var cantidadDeTechs = techsFrontend.push('backbone');
+let techsFrontend = ['react', 'vue', 'angular'];
+let cantidadDeTechs = techsFrontend.push('backbone');
 
 console.log(techsFrontend);
 // [ 'react', 'vue', 'angular', 'backbone' ]
@@ -55,20 +55,20 @@ console.log(cantidadDeTechs); // 6
  * Podes leer más sobre shift en el sitio del MDN
  * Ejemplo:
  */
-var techsFrontend = ['react', 'vue', 'angular'];
-var react = techsFrontend.shift();
+let techsFrontend = ['react', 'vue', 'angular'];
+let react = techsFrontend.shift();
 console.log(techsFrontend);
 // ['vue', 'angular']
 console.log(techsFrontend.length);
 // 2
 
-var vue = techsFrontend.shift();
+let vue = techsFrontend.shift();
 console.log(techsFrontend);
 // ['angular']
 console.log(techsFrontend.length);
 // 1
 
-var angular = techsFrontend.shift();
+let angular = techsFrontend.shift();
 console.log(techsFrontend);
 // []
 console.log(techsFrontend.length);
@@ -90,20 +90,20 @@ console.log(angular); // angular
  * Podes leer más sobre pop en el sitio del MDN
  * Ejemplo:
  */
-var techsFrontend = ['react', 'vue', 'angular'];
-var angular = techsFrontend.pop();
+let techsFrontend = ['react', 'vue', 'angular'];
+let angular = techsFrontend.pop();
 console.log(techsFrontend);
 // ['react', 'vue']
 console.log(techsFrontend.length);
 // 2
 
-var vue = techsFrontend.pop();
+let vue = techsFrontend.pop();
 console.log(techsFrontend);
 // ['react']
 console.log(techsFrontend.length);
 // 1
 
-var react = techsFrontend.pop();
+let react = techsFrontend.pop();
 console.log(techsFrontend);
 // []
 console.log(techsFrontend.length);

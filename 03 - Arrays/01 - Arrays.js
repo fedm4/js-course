@@ -10,10 +10,10 @@ Ejemplo:
 /*En este caso tenemos un array que tiene 4 elementos que parecen ser personas
 Ejemplo:
 */
-var playlist = ['Smells Like Teen Spirit', 'Come As You Are', 'Heart-Shaped Box', 'Lithium'];
+let playlist = ['Smells Like Teen Spirit', 'Come As You Are', 'Heart-Shaped Box', 'Lithium'];
 
 // otra forma de escribir esto puede ser:
-var playlist = [
+let playlist = [
   'Smells Like Teen Spirit',
   'Come As You Are',
   'Heart-Shaped Box',
@@ -22,11 +22,11 @@ var playlist = [
 /*También podemos crear un array vacío ya que no siempre sabemos que elementos va a tener
 Ejemplo:
 */
-var playlist = [];
+let playlist = [];
 /*Un array puede guardar cualquier tipo de dato
 Ejemplo:
 */
-var datos = [
+let datos = [
   'Ada',
   42,
   true,
@@ -40,26 +40,25 @@ var datos = [
  * Ejemplo: 
  * */
 
-var datos = [
+let datos = [
   'Ada',
   42,
   true,
   null,
-  function() { console.log('¡hola!') }
+  () => console.log('¡hola!')
 ];
 
-var nombre = datos[0];
-var edad = datos[1];
-var esProgramadora = datos[2];
-var miVariable = datos[3];
-var saludar = datos[4];
+let nombre = datos[0];
+let edad = datos[1];
+let esProgramadora = datos[2];
+let miVariable = datos[3];
+let saludar = datos[4];
 
 console.log(nombre);
 console.log(edad);
 console.log('programadora?:', esProgramadora);
 console.log(miVariable);
 
-// Acá se viene el gran momento de tu vida:
 saludar(); // muestra en consola hola
 /**
  * En este ejemplo vemos que podemos acceder a los distintos elementos de un array utilizando un índice numérico
@@ -69,7 +68,7 @@ saludar(); // muestra en consola hola
  * También podemos asignar un valor a una posición de un array utilizando el índice
  * Ejemplo:
  */
-var peliculas = ["Superman", "Batman Begins", "The Dark Knight", "Man of Steel", "The Batman"];
+let peliculas = ["Superman", "Batman Begins", "The Dark Knight", "Man of Steel", "The Batman"];
 
 peliculas[0] = 'Batman';
 peliculas[3] = 'The Dark Knight Rises';
@@ -79,13 +78,13 @@ console.log(peliculas);
 /*Tenemos que tener cuidado al asignar un item de un array
 Ejemplo:*/
 
-var peliculas = ['Batman', 'Batman Begins', 'The Dark Knight', 'The Dark Knight Rises'];
+let peliculas = ['Batman', 'Batman Begins', 'The Dark Knight', 'The Dark Knight Rises'];
 peliculas[8] = 'The Batman';
 console.log(peliculas);
 // ['Batman', 'Batman Begins', 'The Dark Knight', 'The Dark Knight Rises', , , , , 'The Batman']
 /*ECMAScript al manejar la memoria de forma dinámica asigna espacios vacíos en las posiciones donde no existen valores*/
 
-var peliculas = ['Batman', 'Batman Begins', 'The Dark Knight', 'The Dark Knight Rises'];
+let peliculas = ['Batman', 'Batman Begins', 'The Dark Knight', 'The Dark Knight Rises'];
 peliculas[4] = 'Batman: The Killing Joke';
 peliculas[5] = 'Batman: The Dark Knight Returns, Part 1';
 peliculas[6] = 'Batman: The Dark Knight Returns, Part 2';
@@ -114,20 +113,20 @@ console.log(peliculas);
  * Ejemplo:
  */
 
-var peliculas = ['Batman', 'Batman Begins', 'The Dark Knight', 'The Dark Knight Rises'];
+let peliculas = ['Batman', 'Batman Begins', 'The Dark Knight', 'The Dark Knight Rises'];
 console.log(peliculas.length); // 4
 /** 
  * Podemos utilizar esta propiedad para obtener el último elemento de un array
  * Si a la longitud de un array le restamos 1 obtenemos el último índice del último elemento
  * Ejemplo:
  */
-var peliculas = ['Batman', 'Batman Begins', 'The Dark Knight', 'The Dark Knight Rises'];
-var cantidadDePeliculas = peliculas.length;
-var ultimoIndice = cantidadDePeliculas - 1;
+let peliculas = ['Batman', 'Batman Begins', 'The Dark Knight', 'The Dark Knight Rises'];
+let cantidadDePeliculas = peliculas.length;
+let ultimoIndice = cantidadDePeliculas - 1;
 console.log(peliculas[ultimoIndice]); // The Dark Knight Rises
 
 //Otra forma de escribir esto es: Ejemplo:
-var peliculas = ['Batman', 'Batman Begins', 'The Dark Knight', 'The Dark Knight Rises'];
+let peliculas = ['Batman', 'Batman Begins', 'The Dark Knight', 'The Dark Knight Rises'];
 console.log(peliculas[ peliculas.length - 1 ]); // The Dark Knight Rises
 //Vemos que podemos utilizar la propiedad length - 1 para obtener el último índice y luego obtener el último elemento
 
@@ -141,8 +140,8 @@ console.log(peliculas[ peliculas.length - 1 ]); // The Dark Knight Rises
  * Ejemplo:
  */
 
-var villanosDeBatman = ['Joker', 'Bane', "Ra's Al Ghul", 'Scarecrow'];
-for (var i = 0; i < villanosDeBatman.length; i++) {
+let villanosDeBatman = ['Joker', 'Bane', "Ra's Al Ghul", 'Scarecrow'];
+for (let i = 0; i < villanosDeBatman.length; i++) {
   console.log(villanosDeBatman[i]);
 }
 
@@ -159,8 +158,8 @@ for (var i = 0; i < villanosDeBatman.length; i++) {
  * Ejemplo:
  */
 
-var numeros = [8, 2, 5];
-for (var i = 0; i < numeros.length; i++) {
+let numeros = [8, 2, 5];
+for (let i = 0; i < numeros.length; i++) {
   // en la primer vuelta del for i tiene el valor 0
   // en la segunda vuelta del for i tiene el valor 1
   // en la tercer vuelta del for i tiene el valor 2
@@ -180,11 +179,11 @@ for (var i = 0; i < numeros.length; i++) {
  * Ejemplos:
  */
 
-var villanosDeBatman = ['Joker', 'Bane', "Ra's Al Ghul", 'Scarecrow'];
+let villanosDeBatman = ['Joker', 'Bane', "Ra's Al Ghul", 'Scarecrow'];
 // en este caso estamos diciendo que vaya desde i = 3 (length - 1)
 // y en la condicion decimos que siga dando vueltas siempre que i se mayor o igual a 0
 // usamos el igual porque queremos y necesitamos que llegue a 0, ya que seria el elemento que esta en la primer posición
-for (var i = villanosDeBatman.length - 1; i >= 0; i--) {
+for (let i = villanosDeBatman.length - 1; i >= 0; i--) {
   // en la primer vuelta del for i tiene el valor 2
   // en la segunda vuelta del for i tiene el valor 1
   // en la tercer vuelta del for i tiene el valor 0

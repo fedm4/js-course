@@ -95,3 +95,8 @@ let frutas = ['Manzana', 'Banana'];
  * Resultado esperado
  */
 [1, 2, 3, 4, 5, 6]
+
+//06
+
+// Ordernar el siguiente array de menor a mayor *google*
+[3,2,5,7,4,1,6]

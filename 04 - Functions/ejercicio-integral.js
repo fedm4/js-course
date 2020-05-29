@@ -20,6 +20,9 @@
  *    buscando por mail.
  * 7. Hacer una funcion que permita modificar edad 
  *    buscando por mail.
- * Observaciones: Google. Mucho google.
+ * Observaciones: 
+ *  - Pensar en arrays dentro de arrays variable = [ ['dato1', 2, true], [], [] ]
+ *  - Utilizar funciones de los arrays, find (o findIndex), map o for of
+ *  - Utilizar nombres de variables y funciones representativas
  * 
  ************************************************/

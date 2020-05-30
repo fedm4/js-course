@@ -71,6 +71,12 @@ b // [1,3]
  * miFuncion2(() => { 
  *      console.log("Mi función declarada en invocación") 
  * });
- *  
+ * 
+ * Esto tambien se puede escribir 
+ * const myFunction = callback => callback(); // No necesito parentesis en el
+ *                                            // parametro, porque hay un solo
+ *                                            // elemento
+ *                                            // no poner llaves implica hacer un
+ *                                            // return de forma tacita.
  * 
  *****************************************/

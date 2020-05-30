@@ -3,7 +3,7 @@
  * 
  * Escribir una función que reciba como parámetro
  * un número e imprima ese número al revés.
- * Split y join
+ * array.reverse
  * 
  ***********************************************/
 
@@ -12,7 +12,7 @@
  * 
  * Escribir una función que reciba una palabra
  * e imprima sus letras ordenadas alfabéticamente.
- * array.reverse
+ * Split y join + sort
  *  
  ***********************************************/
 

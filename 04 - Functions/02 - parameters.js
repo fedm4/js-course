@@ -25,6 +25,7 @@ b // [1,3]
  * Ej:
  * let myFunction = (param1, param2) => {
  *      // código a ejecutar
+ * console.log(param1) // valor1
  * };
  * 
  * myFunction("valor1", "valor2");

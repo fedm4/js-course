@@ -42,4 +42,16 @@
  // que el original
  const nuevoArr = [1,2,3].map(item => item + 1);
  console.log(nuevoArr)// [2,3,4]
- 
+
+ // filter
+ const nuevoArr = [1,2,3,4].map(item => item > 2); // notese que el return es una comparacion / return item > 2. 
+                                                   // Si es true, me sirve, si es  false, lo descarto.
+ console.log(nuevoArr); // [3,4]
+
+ // find
+ const item = [1,2,3,4].map(item => item === 3); // devuelvo true cuando encuentro mi elemento
+console.log(item) // 3
+
+// find index
+const index = ["Pepe", "Antonia", "Reuben", "Olga"].findIndex(item => item === "Reuben");
+console.log(index); // 2

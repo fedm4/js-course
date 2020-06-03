@@ -1,8 +1,9 @@
 /***********************************************
  * 
- * 1. Hacer una función que guarde una lista
- *    de listas de datos de personas. Deberia
- *    guardar por cada persona, una lista de datos
+ * 1. Hacer una función que guarde una persona
+ *    en una lista de listas de datos de personas.
+ *    Es decir, una lista con varias listas adentro.
+ *    Deberia guardar por cada persona, una lista de datos
  *    que incluyan el nombre completo, la edad y 
  *    la dirección de email.
  * 1b. Al ingresar nueva persona, validar que no 

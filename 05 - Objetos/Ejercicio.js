@@ -1,6 +1,6 @@
 /**********************************************
  * Hacer un programa que nos permita 
- * cargar/modificar/borrar
+ * cargar/modificar/borrar un catalogo de 
  * productos (deberían tener "id", como identificador 
  * único de número, por ej: 1, 2, 3.; título, descripción
  * de producto y precio (float)).

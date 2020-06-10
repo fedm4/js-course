@@ -15,6 +15,7 @@ const miObjeto = {};
  * 
  * Para crear un objeto con datos, podemos usar:
  */
+// ["Fede", 34, "fede.m.fede@gmail.com"]
 const persona = {
     nombre: "Fede",
     edad: 34,
@@ -50,7 +51,7 @@ const persona = {
     saludo: function () {
         alert(`Hola! Soy ${this.nombre}`);
     },
-    saludoArrow: function () {
+    saludoArrow: () => {
         alert(`Hola! Soy ${persona.nombre}`);
     },
     saludoEspecifico: function (otroNombre) {

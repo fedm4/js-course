@@ -16,7 +16,7 @@
  *    una persona por email.
  * 4. Hacer una función que me permita encontrar 
  *    personas por nombre o parte del nombre.
- * 5. Hacer una función para borrar personas por mail.
+ * 5. Hacer una función para borrar personas por mail. / splice
  * 6. Hacer una funcion que permita modificar nombre
  *    buscando por mail.
  * 7. Hacer una funcion que permita modificar edad 

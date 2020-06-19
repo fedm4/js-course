@@ -49,6 +49,6 @@
   * 2. Cambiar el estado
   * 3. Remover peliculas
   * 4. Obtener una lista legible con console.log de peliculas 
-  * por estado. O sea, le pido un estado y me deuvelve las peliculas
+  * por estado. Es decir, le pido un estado y me deuvelve las peliculas
   * correspondientes. (`nombre del año tanto, dirigida por quien`)
   */

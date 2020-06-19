@@ -37,3 +37,18 @@
  * 5 gramos de levadura, etc...
  */
  
+ /*************************************
+  * Crear una funcion que me devuelva un objeto
+  * Este objeto va a permitirme guardar 
+  * peliculas que quiera ver, haya visto, o este viendo
+  * O  sea, tengo un objeto con una lista de peliculas,
+  * cada pelicula tiene su nombre, su director, su año, 
+  * su genero, y un estado que puede ser (pendiente, viendo, vista).
+  * Lo que tengo que poder hacer es
+  * 1. Agregar peliculas
+  * 2. Cambiar el estado
+  * 3. Remover peliculas
+  * 4. Obtener una lista legible con console.log de peliculas 
+  * por estado. O sea, le pido un estado y me deuvelve las peliculas
+  * correspondientes. (`nombre del año tanto, dirigida por quien`)
+  */

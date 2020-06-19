@@ -14,7 +14,7 @@
      _edad: 33,
      set nombre (nombre) {
         if(typeof nombre !== "string") {
-            throw "El nombre debe ser string";
+            throw new Error("El nombre debe ser string");
         }
         this._nombre = nombre;
      },

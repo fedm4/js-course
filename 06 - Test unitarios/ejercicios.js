@@ -14,6 +14,13 @@
   * función. Recordar tirar errores y testearlos.
   */
 
+/**
+ * Una funcion que reciba o un numero o un string
+ * correspondiente a un mes, y devuelva el opuesto.
+ * (Si recibe 12, devuelve Diciembre, si recibe Diciembre, devuelve 12).
+ * Comenzar por los tests, recordar tirar errores y testearlos.
+ */
+
 /**************************************************
  * Hacer una serie de funciones para un TODO list.
  * Que me permita cargar una tarea, con un titulo, 

@@ -13,7 +13,7 @@
  * correctamente:
  */ 
  const sumaDos = (numero) => {
-       return parseInt(numero) + 2;
+       return Number(numero) + 2;
  };
  /************************************ 
  * Para esto voy a necesitar "casos".
@@ -42,9 +42,10 @@ test('suma 2 al numero 1, devolviendome 3', ()=>{
  * es mayor a otro.
  */
 /*test('suma 2 devuelve un numero mayor a 1', ()=>{
-    expect(sumaDos(0)).toBeGreaterThan(1);
+    const resultado = sumaDos(0);
+    expect(resultado).toBeGreaterThan(1);
 });
-
+*/
 /************************************
  * Puedo testear buscando palabras con 
  * expresiones regulares usando toMatch.
@@ -67,12 +68,14 @@ test('string no contiene la palabra test', () => {
  * como con expresiones regulares.
  */
 
-/*const throwMeAnError = () => {
+/*const pepe = () => 3;
+pepe; // definicion de la funcion. NO es el resultado
+pepe(); // 3 - Resultado de la funcion.
+
+const throwMeAnError = () => {
     throw new Error("This is an error");
 };
-const throwSimple = () =>{
-    throw "This is a throw";
-};
+
 test('test de array', ()=>{
     const miArray = [
         "valor1",
@@ -89,35 +92,35 @@ test('test de throw error', ()=>{
     expect(throwMeAnError).toThrow(Error);
 });
 test('test de throw string', ()=>{
-    expect(throwSimple).toThrow("This is a throw");
-});
-test('test de throw regex', ()=>{
-    expect(throwSimple).toThrow(/throw/);
-});
+    expect(throwMeAnError).toThrow("This is an error");
+}); 
  /********************************************** 
  * Ademas podemos preparar los valores que vamos
  * a necesitar usando beforeEach() y afterEach(), 
  * o setear algunas cosas usando beforeAll y After
  */
-/*let funcionDefinida;
-let miData;
+/*let miData;
+// Antes de TODOS los tests
 beforeAll(()=>{
-    funcionDefinida = () => {
-        console.log(miData);
-    }
-    console.log('ejecuto before all');
-});
-beforeEach(()=>{
     miData = 0;
+    console.log('Empiezo mis tests - ejecuto before all');
+});
+// Antes de CADA test
+beforeEach(()=>{
+    miData++;
     console.log('ejecuto before each');
 });
+// Despues de CADA tanto
 afterEach(()=>{
+    miData++;
     console.log('ejecuto after each')
 });
+// Despues de TODOS los tests
 afterAll(() => {
-    console.log('Ejecuto after all')
-});*/
-
+    console.log(miData);
+    console.log('Termino mis tests - Ejecuto after all')
+});
+*/
 
 const getDia = (dia) => {
     switch(dia) {
@@ -158,7 +161,8 @@ test('le paso "domingo" y devuelve 7', () =>{
 });
 
 test('le paso "demango" tira error', () =>{
-    expect(() => {
-        getDia("demango");
-    }).toThrow("El día no existe, guache.");
+    expect(() => getDia("demango")).toThrow("El día no existe, guache.");
+});
+test('le paso "lones" tira error', () =>{
+    expect(() => getDia("lones")).toThrow("El día no existe, guache.");
 });

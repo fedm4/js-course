@@ -4,7 +4,7 @@
  * Esto significa que estoy describiendo 
  * objetos en una sintaxis distinta, pero 
  * funciona, internamente, de la misma forma
- * que los objetos.
+ * que las funciones constructoras.
  * 
  * Lo primero que tenemos es el constructor, 
  * que va a ser el lugar donde vamos a 
@@ -19,25 +19,23 @@
  * clases se radica en como crear un objeto 
  * nuevo.
  */
-const a = 1;
-let b = a;
-b = 2;
-a // 1
-b // 2
-/////////////////////////////
-const a = {valor1:1};
-const b = a;
-const c = Object.assign({}, a);
-b.valor1 = 2;
-a.valor1 // 2
-b.valor1 // 2
-c.valor1 // 1
- 
+
 class Pelaje{
     constructor(color){
         this.color = color;
     }
 }
+function Gato(nombre, edad, vidas = 7) {
+    this.nombre = nombre;
+    this.edad = edad;
+    this.vidas = vidas;
+    this.especie = "felino";
+    this.cosas = {
+        esObjeto: true
+    };
+    this.pelaje = new Pelaje("Amarillo");
+}
+
 class Gato {
     constructor(nombre, edad, vidas = 7) {
         this.nombre = nombre;
@@ -84,7 +82,7 @@ const Gato = {
 // Y de la siguiente forma, clonar el objeto
 // gato para usarlo como una "fabrica" de objetos
 // a diferencia de la clase que lo es por definicion
-const michu = Object.assign({}, Gato);
+const michu = Object.assign({}, Gato);// {...Gato}
 
 
 /**

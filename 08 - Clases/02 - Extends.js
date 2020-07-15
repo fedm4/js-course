@@ -19,11 +19,17 @@ class Perro extends Animal {
  */
 class Animal {
     constructor(especie) {
+        this.hola = "hola";
         this.especie = especie;
     }
     comunicarse(){
         return true;
     }
+}
+const gatito = new Animal("Felinx");
+gatito.comunicarse(); // true
+gatito.especie; // "Felinx"
+gatito.hola; // "hola"
 
 class Perro extends Animal{
     constructor(subespecie) {
@@ -37,8 +43,8 @@ class Perro extends Animal{
 const Fido = new Perro("Galgo");
 console.log(Fido.especie); // Canido
 console.log(Fido.subespecie); // Galgo
-Fido.comunicarse();
-Fido.ladrar();
+Fido.comunicarse(); // treu
+Fido.ladrar(); // woof
 /**
  * Para corroborar si las instancias
  * son de un tipo definido, podemos
@@ -83,20 +89,13 @@ class Auto {
 
     }
     prender(){
-        if(...){
-
-        }else if() {
-
-        }else if () {
-            
-        }
+        this.prendido = true;
     }
 }
 
 class Tesla extends Auto {
     constructor(){
-        super("Tesla", "nose", "negro",
-        "electrico");
+        super("Tesla", "nose", "negro", "electrico");
     }
     prender(){
         this.prendido = true;
@@ -105,13 +104,10 @@ class Tesla extends Auto {
 }
 class Ferrari extends Auto {
     constructor(){
-        super("Ferrari", 
-        "la del turco",
-        "rojo",
-        "combustion");
+        super("Ferrari", "900", "rojo", "combustion");
     }
     prender(){
         this.prendido = true;
-        return "chispazo de combustion";
+        return "brooom!!";
     }
 }

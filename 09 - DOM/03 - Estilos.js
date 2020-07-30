@@ -3,9 +3,13 @@
  * Para esto, tenemos varias formas de trabajar
  getComputedStyle(el) // Objeto con estilos
  */
+const el = document.querySelector("#...");
 el.style.height = "200px"; //
+el.style.width = "100%";
+el.style.zIndex = 2;
+el.style.display = "block"; // o un "none";
 el.cssText // "height: 200px"
-el.setAttribute("style", "height: 200px; background: blue;");
+el.setAttribute("style", "height: 200px; background: blue; z-index: 1;");
 
 
 /**

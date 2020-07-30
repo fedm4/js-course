@@ -10,6 +10,7 @@
   * Modificar la funcion previa para que, si no se recibe
   * un color por parametro, se busque un color de forma
   * azarosamente.
+  * (math.random)
   */
 
 

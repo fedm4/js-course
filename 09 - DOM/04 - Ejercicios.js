@@ -1,14 +1,14 @@
 // 001 
 /**
- * Crear un TODO list, que tenga
+ * Crear un TODO list (ul li), que tenga
  * 1. un input para agregar nuevos TODO
- * 2. Este input debe tener un button para poder
- *    agregar el TODO desde el input
+ * 2. Este input debe tener un button (type="button") para poder
+ *    agregar el TODO desde el input 
  * 3. un button por cada TODO de la lista
- *  para borrar el mismo.
+ *  para borrar el mismo. (event.target y parentElement)
  * 4. Un checkbox, antes del texto de cada TODO,
  *  que me permita tachar el elemento de la lista
- *  como resuelto. 
+ *  como resuelto. (texto puede ir en span)
  */
 
  // 002

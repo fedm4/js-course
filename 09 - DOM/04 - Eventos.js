@@ -37,6 +37,9 @@ input.addEventListener("change", event => {
 });
 
 let el = document.querySelector("#miId")
-el.addEventListener("keyup", (event) => {
+el.addEventListener("keyup", (event) => { // keypress, keydown
 	console.log(event.target == el);
 });
+
+// mouseover
+// mouseout
